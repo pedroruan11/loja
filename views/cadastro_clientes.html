@@ -1,0 +1,76 @@
+<menu-diretiva></menu-diretiva>
+<h3>Cadastrar Cliente</h3>
+
+<div class="jumbotron" style="margin-right:30px; padding-top: 10px; padding-right: 30px; padding-left: 30px; background-color: #f8f9fa">
+
+    <form ng-submit="salvarCliente()">
+        <div class="form-row">
+            <div ng-if="record.id > 0" class="col-sm-12" style="margin-bottom: 10px;">
+                        <label for="record-id" class="label-control">Id:</label>
+                        <input  id="record-id" type="text" readonly="readonly" ng-model="record.id"/>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="nome">Nome:</label>
+                <input type="record-nome" class="form-control" id="nome" ng-model="record.nome" placeholder="">
+            </div>
+    
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="cpf">CPF/CNPJ:</label>
+                <input id="record-cpf" type="text" ng-model="record.cpf" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-row">
+                <div class="form-group col-md-2">
+                    <label for="cep">Cep:</label>
+                    <input type="text" class="form-control" id="record-cep" ng-model="record.cep" placeholder="">
+                </div>
+                <div class="form-group col-md-6" style="top: 38px">
+
+                       <a href=""> <h6>Não sei meu cep</h6></a>
+                    </div>
+  
+            </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="endereco">Endereço:</label>
+                <input type="text" class="form-control" id="record-endereco" ng-model="record.endereco" placeholder="">
+            </div>
+            <div class="form-group col-md-1">
+                <label for="numero">Numero:</label>
+                <input type="text" class="form-control" id="record-numero" ng-model="record.numero" placeholder="">
+            </div>
+            <div class="form-group col-md-2">
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" class="form-control" id="record-complemento" ng-model="record.complemento" placeholder="">
+                </div>
+   
+        </div>
+        <div class="form-row">
+                <div class="form-group col-md-3">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" class="form-control" id="record-bairro" ng-model="record.bairro" placeholder="">
+                    </div>
+
+                <div class="form-group col-md-3">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" class="form-control" id="record-cidade" ng-model="record.cidade" placeholder="">
+                </div>
+                <div class="form-group col-md-1">
+                        <label for="estado">Estado:</label>
+                        <select id="record-estado" class="form-control">
+                                <option selected>...</option>
+                                <option>SP</option>
+                            </select>
+                    </div>
+            </div>
+
+        <div style="float: right">
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </div>
+    </form>
+</div>
+

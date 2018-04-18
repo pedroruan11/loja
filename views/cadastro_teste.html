@@ -1,0 +1,66 @@
+<menu-diretiva></menu-diretiva>
+<h3>Alugar Veiculo</h3>
+
+<div class="jumbotron" style="margin-right:30px; padding-top: 10px; padding-right: 30px; padding-left: 30px; background-color: #f8f9fa">
+
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Cliente</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Cliente">
+            </div>
+            <div class="form-group col-md-6" style="top: 32px">
+
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="inputAddress">Data Inicial </label>
+                <input id="record-birthDate" required type="date" ng-model="record.birthDate" class="form-control" />
+            </div>
+            <div class="form-group col-md-3">
+                <label for="inputAddress">Data Final </label>
+                <input id="record-birthDate" required type="date" ng-model="record.birthDate" class="form-control" />
+            </div>
+        </div>
+
+
+        <h5>Dados do Veiculo</h5>
+
+
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="inputAddress2">Tipo de Veiculo</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Selecione...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="inputAddress2">Marca</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Selecione...</option>
+                    <option>...</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputAddress2">Modelo</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Selecione...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Kilometragem Atual</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div>
+        <div style="float: right">
+        <button type="submit" class="btn btn-primary">Alugar</button>
+        </div>
+    </form>
+</div>
+
